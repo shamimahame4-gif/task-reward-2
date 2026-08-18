@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+.app {
+    max-width: 520px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 18px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+.header p {
+    margin-top: 5px;
+    color: #697386;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px #00000012;
+}
+
+
+/* Balance */
+
+.balance-card {
+    background: linear-gradient(135deg, #246bfe, #5b8cff);
+    color: white;
+    border-radius: 22px;
+    padding: 25px;
+    box-shadow: 0 10px 25px #246bfe30;
+}
+
+.balance-card p {
+    opacity: .85;
+}
+
+.balance-card h2 {
+    font-size: 38px;
+    margin: 10px 0 20px;
+}
+
+.balance-card small {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+/* Button */
+
+.primary-btn {
+    border: none;
+    background: white;
+    color: #246bfe;
+    padding: 11px 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Sections */
+
+.section {
+    margin-top: 25px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.section-title span {
+    color: #246bfe;
+    font-size: 13px;
+}
+
+
+/* Tasks */
+
+.task-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.task-card {
+    border: none;
+    background: white;
+    border-radius: 18px;
+    padding: 20px 10px;
+    text-align: left;
+    box-shadow: 0 5px 18px #0000000b;
+    cursor: pointer;
+}
+
+.task-icon {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.task-card strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.task-card small {
+    color: #7b8494;
+}
+
+
+/* Quick Actions */
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.quick-actions button {
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding: 14px 5px;
+    cursor: pointer;
+}
+
+.quick-actions button:first-line {
+    font-size: 20px;
+}
+
+.quick-actions span {
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #7b8494;
+}
+
+footer small {
+    display: block;
+    margin-top: 5px;
+}
