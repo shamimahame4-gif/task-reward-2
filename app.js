@@ -33,19 +33,19 @@ let balance = 0;
 
 // Demo functions
 function watchAd() {
-    const adFunction = window["show_11602154"];
-
-    if (typeof adFunction !== "function") {
-        alert("Ad is loading. Please try again in a few seconds.");
+    if (typeof show_11602154 !== "function") {
+        alert("Ad is not ready yet. Please try again.");
         return;
     }
 
-    adFunction()
+    show_9230697()
         .then(() => {
-            alert("Ad completed successfully!");
+            alert("Ad completed successfully.");
+            // এখানে এখনই balance যোগ করছি না।
+            // Backend/Postback verification করার পর reward দেব।
         })
         .catch((error) => {
-            console.log("Monetag error:", error);
+            console.log("Ad error:", error);
             alert("Ad could not be shown. Please try again.");
         });
 }
