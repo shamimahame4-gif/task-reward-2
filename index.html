@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    >
+
+    <title>Task Reward 2.0</title>
+
+    <!-- Telegram Mini App -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1>Task Reward 2.0</h1>
+                <p id="welcome">Welcome 👋</p>
+            </div>
+
+            <div class="avatar" id="avatar">👤</div>
+        </header>
+
+
+        <!-- Balance -->
+        <section class="balance-card">
+            <p>Your Balance</p>
+
+            <h2>
+                <span id="balance">0</span>
+                <small>Points</small>
+            </h2>
+
+            <button class="primary-btn" onclick="openRewards()">
+                🎁 Rewards
+            </button>
+        </section>
+
+
+        <!-- Tasks -->
+        <section class="section">
+            <div class="section-title">
+                <h3>📋 Available Tasks</h3>
+                <span>View all</span>
+            </div>
+
+            <div class="task-grid">
+
+                <button class="task-card" onclick="watchAd()">
+                    <span class="task-icon">🎬</span>
+                    <strong>Watch Ad</strong>
+                    <small>Earn Points</small>
+                </button>
+
+                <button class="task-card" onclick="dailyTask()">
+                    <span class="task-icon">📅</span>
+                    <strong>Daily Task</strong>
+                    <small>Coming Soon</small>
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+
+            <button onclick="openReferral()">
+                👥
+                <span>Refer</span>
+            </button>
+
+            <button onclick="openRewards()">
+                🎁
+                <span>Rewards</span>
+            </button>
+
+            <button onclick="openWithdraw()">
+                💳
+                <span>Withdraw</span>
+            </button>
+
+            <button onclick="openProfile()">
+                👤
+                <span>Profile</span>
+            </button>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>Task Reward 2.0</p>
+            <small>Complete tasks. Earn rewards.</small>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
