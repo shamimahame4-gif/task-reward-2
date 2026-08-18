@@ -33,7 +33,21 @@ let balance = 0;
 
 // Demo functions
 function watchAd() {
-    alert("Rewarded Ad integration will be added here.");
+    const adFunction = window["show_9230697"];
+
+    if (typeof adFunction !== "function") {
+        alert("Ad is loading. Please try again in a few seconds.");
+        return;
+    }
+
+    adFunction()
+        .then(() => {
+            alert("Ad completed successfully!");
+        })
+        .catch((error) => {
+            console.log("Monetag error:", error);
+            alert("Ad could not be shown. Please try again.");
+        });
 }
 
 function dailyTask() {
