@@ -33,7 +33,7 @@ let balance = 0;
 
 // Demo functions
 function watchAd() {
-    const adFunction = window["show_9230697"];
+    const adFunction = window["show_11602154"];
 
     if (typeof adFunction !== "function") {
         alert("Ad is loading. Please try again in a few seconds.");
